@@ -28,4 +28,12 @@ public class ProdutoModel {
     private StatusProduto status;
 
     public ProdutoModel(){}
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
 }
