@@ -1,4 +1,7 @@
 package com.mepr.prova.repositories;
 
-public interface ProdutoRepository {
+import com.mepr.prova.models.ProdutoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
 }
