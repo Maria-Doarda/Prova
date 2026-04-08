@@ -14,4 +14,18 @@ import java.math.BigDecimal;
 @Setter
 @Data
 public class ProdutoModel {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nome;
+
+    private String descricao;
+
+    private BigDecimal preco;
+
+    private StatusProduto status;
+
+    public ProdutoModel(){}
 }
